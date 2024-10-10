@@ -97,7 +97,7 @@ const SignUp = () => {
                 <p className='w-full mt-5 flex items-center justify-between'>
                     <span className="line  text-[14px]">
                         Oldin ro'yhatdan o'tgansizmi ?
-                        <Link to="/signup" className='text-[#0077B6] text-[14px] ml-5'>Kirish</Link>
+                        <Link to="/login" className='text-[#0077B6] text-[14px] ml-5'>Kirish</Link>
                     </span>
                     <span className="line ml-5">
 

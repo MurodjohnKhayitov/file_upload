@@ -18,7 +18,6 @@ const SignIn = () => {
                 setAuth(res?.user)
                 setEmail('')
                 setPassword('')
-                navigate('/cabinet')
                 toast.success(`Success SignIn`, {
                     position: "top-right",
                     autoClose: 3000,
@@ -29,6 +28,7 @@ const SignIn = () => {
                     progress: undefined,
                     theme: "light",
                 });
+                navigate('/cabinet')
             })
             .catch(() => {
                 toast.error(`Something Wrong!`, {
@@ -45,9 +45,9 @@ const SignIn = () => {
     }
     useEffect(() => {
         window.scrollTo({
-          top: 0,
+            top: 0,
         });
-      }, []);
+    }, []);
     return (
         <div className='w-full h-[calc(100vh-72px)] flex items-center justify-center border'>
             <ToastContainer
@@ -95,7 +95,7 @@ const SignIn = () => {
                 </form>
                 <p className='w-full mt-5 flex items-center justify-between'>
                     <span className="line ml-5 text-[14px]">
-                       Sizning accountingiz yo'qmi ?
+                        Sizning accountingiz yo'qmi ?
                         <Link to="/signup" className='text-[#0077B6] text-[14px] ml-5'>Ro'yhatdan o'tish</Link>
                     </span>
                     <span className="line ml-5">
